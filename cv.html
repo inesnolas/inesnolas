@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curriculum Vitae">
+    <title>CV - Ines Nolasco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CV-specific styles */
+        .cv-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+        }
+
+        .cv-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .cv-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .cv-header .position {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .cv-header .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .cv-header .contact-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .cv-header .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .print-button {
+            display: inline-block;
+            float: right;
+            padding: 0.5rem 1rem;
+            background: var(--secondary-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .print-button:hover {
+            background: #2980b9;
+        }
+
+        @media print {
+            .back-link, .print-button, .navbar {
+                display: none;
+            }
+
+            .cv-container {
+                margin: 0;
+                padding: 0;
+            }
+
+            .cv-section {
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .cv-container {
+                padding: 1rem;
+            }
+
+            .cv-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title">Ines Nolasco</h1>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="index.html#news">News & Tidbits</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="cv-container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        <button class="print-button" onclick="window.print()">Print CV</button>
+        <div style="clear: both;"></div>
+
+        <div class="cv-header">
+            <h1>Ines Nolasco</h1>
+            <p class="position">Postdoctoral Researcher at <a href="https://www.earthspecies.org/" target="_blank" style="color: var(--secondary-color); text-decoration: none;">Earth Species Project</a></p>
+            <div class="contact-links">
+                <a href="mailto:a.nolasco.ines@gmail.com">a.nolasco.ines@gmail.com</a>
+                <a href="https://scholar.google.com/citations?hl=en&user=C1jftogAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a>
+                <a href="https://github.com/inesnolas" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <section class="cv-section">
+            <h2>Education</h2>
+            <ul class="cv-list">
+                <li>
+                    <span class="cv-title">Ph.D. in [Field]</span>
+                    <span class="cv-institution">[University Name]</span>
+                    <span class="cv-date">[Year]</span>
+                    <p class="cv-detail">Dissertation: [Title]<br>Advisor: [Advisor Name]</p>
+                </li>
+                <li>
+                    <span class="cv-title">M.S. in [Field]</span>
+                    <span class="cv-institution">[University Name]</span>
+                    <span class="cv-date">[Year]</span>
+                </li>
+                <li>
+                    <span class="cv-title">B.S. in [Field]</span>
+                    <span class="cv-institution">[University Name]</span>
+                    <span class="cv-date">[Year]</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="cv-section">
+            <h2>Professional Experience</h2>
+            <ul class="cv-list">
+                <li>
+                    <span class="cv-title">[Position Title]</span>
+                    <span class="cv-institution">[Institution/Company]</span>
+                    <span class="cv-date">[Year] - Present</span>
+                    <p class="cv-detail">[Brief description of role and responsibilities]</p>
+                </li>
+                <li>
+                    <span class="cv-title">[Previous Position]</span>
+                    <span class="cv-institution">[Institution/Company]</span>
+                    <span class="cv-date">[Year] - [Year]</span>
+                    <p class="cv-detail">[Brief description of role]</p>
+                </li>
+                <li>
+                    <span class="cv-title">[Earlier Position]</span>
+                    <span class="cv-institution">[Institution/Company]</span>
+                    <span class="cv-date">[Year] - [Year]</span>
+                    <p class="cv-detail">[Brief description of role]</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="cv-section">
+            <h2>Publications</h2>
+            <ul class="cv-list">
+                <li>
+                    <p class="cv-detail">
+                        <strong>Your Name</strong>, Co-author Name, Another Co-author.
+                        "Title of Your Most Recent Publication."
+                        <em>Journal/Conference Name</em>, Year.
+                        <a href="#">DOI</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="cv-detail">
+                        Co-author Name, <strong>Your Name</strong>, Another Author.
+                        "Another Important Publication Title."
+                        <em>Conference Proceedings</em>, Year.
+                        <a href="#">DOI</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="cv-detail">
+                        <strong>Your Name</strong>, Collaborator Name.
+                        "Earlier Work on Interesting Topic."
+                        <em>Journal Name</em>, Year.
+                        <a href="#">DOI</a>
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="cv-section">
+            <h2>Honors & Awards</h2>
+            <ul class="cv-list">
+                <li>
+                    <span class="cv-title">[Award Name]</span>
+                    <span class="cv-institution">[Awarding Organization]</span>
+                    <span class="cv-date">[Year]</span>
+                </li>
+                <li>
+                    <span class="cv-title">[Another Award]</span>
+                    <span class="cv-institution">[Organization]</span>
+                    <span class="cv-date">[Year]</span>
+                </li>
+                <li>
+                    <span class="cv-title">[Fellowship/Grant]</span>
+                    <span class="cv-institution">[Organization]</span>
+                    <span class="cv-date">[Year]</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="cv-section">
+            <h2>Teaching Experience</h2>
+            <ul class="cv-list">
+                <li>
+                    <span class="cv-title">[Course Code]: Course Name</span>
+                    <span class="cv-institution">[Institution]</span>
+                    <span class="cv-date">[Semester] [Year]</span>
+                </li>
+                <li>
+                    <span class="cv-title">[Course Code]: Another Course</span>
+                    <span class="cv-institution">[Institution]</span>
+                    <span class="cv-date">[Semester] [Year]</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="cv-section">
+            <h2>Service & Leadership</h2>
+            <ul class="cv-list">
+                <li>
+                    <span class="cv-title">[Role/Committee Name]</span>
+                    <span class="cv-institution">[Organization]</span>
+                    <span class="cv-date">[Year] - [Year/Present]</span>
+                </li>
+                <li>
+                    <span class="cv-title">[Reviewer/Editor Position]</span>
+                    <span class="cv-institution">[Journal/Conference Name]</span>
+                    <span class="cv-date">[Year] - [Year/Present]</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="cv-section">
+            <h2>Skills</h2>
+            <ul class="cv-list">
+                <li>
+                    <span class="cv-title">Programming Languages</span>
+                    <p class="cv-detail">[List your programming languages]</p>
+                </li>
+                <li>
+                    <span class="cv-title">Tools & Technologies</span>
+                    <p class="cv-detail">[List relevant tools and technologies]</p>
+                </li>
+                <li>
+                    <span class="cv-title">Languages</span>
+                    <p class="cv-detail">[List languages and proficiency levels]</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Ines Nolasco. Last updated: <span id="last-updated"></span></p>
+    </footer>
+
+    <script>
+        // Display last updated date
+        document.getElementById('last-updated').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+
+        // Mobile menu toggle
+        const createMobileMenu = () => {
+            const navToggle = document.createElement('button');
+            navToggle.className = 'nav-toggle';
+            navToggle.innerHTML = '☰';
+            navToggle.setAttribute('aria-label', 'Toggle navigation');
+
+            const navContainer = document.querySelector('.nav-container');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (window.innerWidth <= 768) {
+                navContainer.prepend(navToggle);
+
+                navToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+            }
+        };
+
+        if (window.innerWidth <= 768) {
+            createMobileMenu();
+        }
+    </script>
+</body>
+</html>
